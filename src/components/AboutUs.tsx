@@ -26,6 +26,8 @@ const AboutUs = () => {
       gap={"10"}
       display={"flex"}
       flexDirection={"column"}
+      color={"white"}
+
     >
       <Text
         color={"brand.secondary"}

@@ -19,6 +19,7 @@ const OurServices = () => {
       padding={{ lg: "2rem" }}
       mt={{ base: "66px", lg: "120px" }}
       w={{ base: "full" }}
+      color={"white"}
       mx="auto"
     >
       <Text

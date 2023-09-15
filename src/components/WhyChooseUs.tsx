@@ -13,6 +13,7 @@ const WhyChooseUs = () => {
       gap={"10"}
       display={"flex"}
       flexDirection={"column"}
+      color={"white"}
     >
       <Text
         textAlign={{ base: "center", lg: "unset" }}

@@ -14,6 +14,7 @@ const Footer = () => {
       gap={"10"}
       display={"flex"}
       flexDirection={"column"}
+      color={"white"}
     >
       <Grid
         gridTemplateColumns={{

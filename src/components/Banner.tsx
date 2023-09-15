@@ -4,7 +4,9 @@ import React from "react";
 
 const Banner = () => {
   return (
-    <Box id="home" w={{ base: "full" }}>
+    <Box id="home" w={{ base: "full" }}
+    color={"white"}
+    >
       <Box color={"white"} mt={{ base: "5rem", md: "64px" }}>
         <Grid gridTemplateColumns={"45% 55%"} >
           <GridItem display={"flex"} alignItems={"center"}>
