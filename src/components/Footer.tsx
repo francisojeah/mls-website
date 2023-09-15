@@ -18,7 +18,7 @@ const Footer = () => {
     >
       <Grid
         gridTemplateColumns={{
-          lg: "50% 20% 30%",
+          lg: "40% 25% 35%",
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
         }}
