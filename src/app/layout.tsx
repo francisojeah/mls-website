@@ -27,11 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <main
+      <body
         className={` ${openSans.className} ${raleway.variable} font-sans`}
       >
         <Providers>{children}</Providers>
-      </main>
+      </body>
     </html>
   );
 }

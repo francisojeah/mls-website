@@ -119,7 +119,7 @@ const WhyChooseUs = () => {
               Proven Track Record
             </Text>
             <Text fontSize={{ base: "14px", lg: "16px" }}>
-              Since 2013, we&aposve consistently delivered top-notch services,
+              Since 2013, we have consistently delivered top-notch services,
               earning the trust of businesses across Nigeria.
             </Text>
           </Flex>
