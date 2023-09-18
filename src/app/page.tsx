@@ -16,7 +16,7 @@ export default function Home() {
       <BodyWrapper>
         <Box
           w={{ base: "full" }}
-          // maxW={{ lg: "1199px" }}
+          maxW={{ lg: "1199px" }}
           mt={{ lg: "6rem", base: "8rem" }}
           mx="auto"
           mb={"50px"}
