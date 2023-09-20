@@ -59,10 +59,10 @@ const Footer = () => {
                 +234 805 540 4765
               </Text>
             </Link>
-            <Link href={"mailto:femiakintilo@yahoo.com"}>
+            <Link href={"mailto:aderibigbe@modernlogistics.org"}>
               <Text>
                 <EmailIcon mr={"5"} />
-                femiakintilo@yahoo.com
+                aderibigbe@modernlogistics.org
               </Text>
             </Link>
           </Flex>{" "}
