@@ -61,12 +61,15 @@ const AboutUs = () => {
           <Image
             src={"/assets/images/mls-truck-white.png"}
             alt="Truck image"
-            width="100"
-            height="100"
+            width="0"
+            height="0"
+            sizes="100vw"
             quality={100}
             priority={true}
             style={{
               objectFit: "contain",
+              width: "100%",
+              height: "100%",
               maxWidth: "100%",
               maxHeight: "100%",
               borderRadius: "2rem",

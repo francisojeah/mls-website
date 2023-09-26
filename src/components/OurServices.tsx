@@ -59,11 +59,14 @@ const OurServices = () => {
             <Image
               src={"/assets/images/vehicles-boxes.jpg"}
               alt="Truck image"
-              width="100"
-              height="100"
+              width="0"
+              height="0"
+              sizes="100vw"
               quality={100}
               priority={true}
               style={{
+                width: "100%",
+                height: "100%",
                 objectFit: "contain",
                 maxWidth: "100%",
                 maxHeight: "100%",
