@@ -61,7 +61,6 @@ const WhyChooseUs = () => {
                   height="100"
                   quality={100}
                   priority={true}
-                  layout="responsive"
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",
@@ -105,7 +104,6 @@ const WhyChooseUs = () => {
                   height="100"
                   quality={100}
                   priority={true}
-                  layout="responsive"
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",
@@ -149,7 +147,6 @@ const WhyChooseUs = () => {
                   height="100"
                   quality={100}
                   priority={true}
-                  layout="responsive"
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",
@@ -194,7 +191,6 @@ const WhyChooseUs = () => {
                   height="100"
                   quality={100}
                   priority={true}
-                  layout="responsive"
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",

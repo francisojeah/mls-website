@@ -40,9 +40,8 @@ const AboutUs = () => {
         gridTemplateColumns={{ lg: "40% 40%", base: "unset" }}
         justifyContent={"space-between"}
         fontSize={"14px"}
-        gap={{lg:"full", base:"10"}}
+        gap={{ lg: "full", base: "10" }}
       >
-        
         <GridItem>
           <Text fontSize={{ base: "16px", lg: "24px" }}>
             Modern Logistics services limited is one of the most reliable medium
@@ -66,7 +65,6 @@ const AboutUs = () => {
             height="100"
             quality={100}
             priority={true}
-            layout="responsive"
             style={{
               objectFit: "contain",
               maxWidth: "100%",

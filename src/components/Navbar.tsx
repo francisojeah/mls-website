@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import {
   Box,
@@ -68,7 +68,6 @@ const Navbar = () => {
                   height="100"
                   quality={100}
                   priority={true}
-                  layout="responsive"
                   style={{
                     objectFit: "contain",
                     maxWidth: "100%",
@@ -88,7 +87,7 @@ const Navbar = () => {
                 <MenuButton
                   as={IconButton}
                   aria-label="Options"
-                  icon={<HamburgerIcon color={"white"}/>}
+                  icon={<HamburgerIcon color={"white"} />}
                   variant="outline"
                   flexDirection={"column"}
                 />

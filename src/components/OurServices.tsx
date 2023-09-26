@@ -43,7 +43,7 @@ const OurServices = () => {
           MLS - LOGIN WITH US TO EXPEDITE
         </Text>
         <Grid
-          gridTemplateColumns={{lg:"40% 60%", base:"unset"}}
+          gridTemplateColumns={{ lg: "40% 60%", base: "unset" }}
           justifyContent={"space-between"}
           fontSize={"14px"}
           gap={"10"}
@@ -63,7 +63,6 @@ const OurServices = () => {
               height="100"
               quality={100}
               priority={true}
-              layout="responsive"
               style={{
                 objectFit: "contain",
                 maxWidth: "100%",
