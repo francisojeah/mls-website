@@ -1,20 +1,15 @@
-"use client";
-
 import {
   Box,
-  Button,
   Flex,
   IconButton,
+  Image,
   Menu,
   MenuButton,
   MenuItem,
   MenuList,
   Text,
 } from "@chakra-ui/react";
-import React from "react";
 import BodyWrapper from "./BodyWrapper";
-import Link from "next/link";
-import Image from "next/image";
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 const Navbar = () => {
@@ -50,7 +45,7 @@ const Navbar = () => {
             mx={{ md: "auto" }}
           >
             {" "}
-            <Link href="/">
+            <a href="/">
               {/* <Flex alignItems={"center"}>
                 <Text
                   color={"brand.secondary"}
@@ -67,8 +62,6 @@ const Navbar = () => {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  quality={100}
-                  priority={true}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -78,7 +71,7 @@ const Navbar = () => {
                   }}
                 />
               </Box>
-            </Link>
+            </a>
             <Flex
               alignItems={"center"}
               fontSize={{ lg: "18px" }}
@@ -94,71 +87,83 @@ const Navbar = () => {
                   variant="outline"
                   flexDirection={"column"}
                 />
-                <MenuList>
-                  <MenuItem>
+                <MenuList
+                  flexDirection={"column"}
+                  display={"flex"}
+                  gap={"5"}
+                  bg={"black"}
+                >
+                  <MenuItem bg={"black"}>
                     <Box w={"full"}>
-                      <Link href={"#home"}>
+                      <a href={"#home"}>
                         <Text
                           transition="all 0.2s ease-in-out"
                           mr="1rem"
-                          color="black"
+                          color="white"
                           _groupHover={{
-                            color: "black",
+                            color: "white",
                             fontWeight: "600",
                           }}
                         >
                           HOME
                         </Text>
-                      </Link>
+                      </a>
                     </Box>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem bg={"black"}>
                     <Box w={"full"}>
-                      <Link href={"#aboutus"}>
+                      <a href={"#aboutus"}>
                         <Text
                           transition="all 0.2s ease-in-out"
                           mr="1rem"
-                          color="black"
+                          color="white"
                           _groupHover={{
-                            color: "black",
+                            color: "white",
                             fontWeight: "600",
                           }}
                         >
                           ABOUT US
                         </Text>
-                      </Link>
+                      </a>
                     </Box>
                   </MenuItem>
-                  <MenuItem>
+                  <MenuItem bg={"black"}>
                     <Box w={"full"}>
-                      <Link href={"#ourservices"}>
+                      <a href={"#ourservices"}>
                         <Text
                           transition="all 0.2s ease-in-out"
                           mr="1rem"
-                          color="black"
+                          color="white"
                           _groupHover={{
-                            color: "black",
+                            color: "white",
                             fontWeight: "600",
                           }}
                         >
                           OUR SERVICES
                         </Text>
-                      </Link>
+                      </a>
                     </Box>
                   </MenuItem>
 
-                  <MenuItem>
+                  <MenuItem w={"full"} bg={"black"}>
                     <Box w={"full"}>
-                      <Link href={"#footer"}>
-                        <Button
+                      <a href={"#footer"}>
+                        <Box
+                          fontWeight={"500"}
+                          borderRadius={"0.5rem"}
+                          px={"1rem"}
+                          py={"0.5rem"}
                           color={"white"}
                           bg={"brand.secondary"}
                           transition={"all 0.2s ease-in-out"}
                           _hover={{ filter: "brightness(105%)" }}
+                          display={"flex"}
+                          justifyContent={"center"}
+                          alignItems={"center"}
                         >
                           CONTACT US
-                        </Button>
-                      </Link>
+                        </Box>
+                      </a>
                     </Box>
                   </MenuItem>
                 </MenuList>
@@ -170,26 +175,33 @@ const Navbar = () => {
               gap={"10"}
               display={{ lg: "flex", base: "none" }}
             >
-              <Link href={"#home"}>
+              <a href={"#home"}>
                 <Text>HOME</Text>
-              </Link>
-              <Link href={"#aboutus"}>
+              </a>
+              <a href={"#aboutus"}>
                 <Text>ABOUT US</Text>
-              </Link>
-              <Link href={"#ourservices"}>
+              </a>
+              <a href={"#ourservices"}>
                 <Text>OUR SERVICES</Text>
-              </Link>
+              </a>
 
-              <Link href={"#footer"}>
-                <Button
+              <a href={"#footer"}>
+                <Box
+                  fontWeight={"500"}
+                  borderRadius={"0.5rem"}
+                  px={"1rem"}
+                  py={"0.5rem"}
                   color={"white"}
                   bg={"brand.secondary"}
                   transition={"all 0.2s ease-in-out"}
                   _hover={{ filter: "brightness(105%)" }}
+                  display={"flex"}
+                  justifyContent={"center"}
+                  alignItems={"center"}
                 >
                   CONTACT US
-                </Button>
-              </Link>
+                </Box>
+              </a>
             </Flex>
           </Flex>
         </Box>

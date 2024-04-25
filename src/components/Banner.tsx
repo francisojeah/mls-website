@@ -1,6 +1,4 @@
-import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
-import Image from "next/image";
-import React from "react";
+import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 
 const Banner = () => {
   return (
@@ -32,8 +30,6 @@ const Banner = () => {
               width="0"
               height="0"
               sizes="100vw"
-              quality={100}
-              priority={true}
               style={{
                 width: "100%",
                 height: "100%",

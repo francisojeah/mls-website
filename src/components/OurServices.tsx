@@ -1,16 +1,11 @@
 import {
-  Accordion,
-  AccordionButton,
-  AccordionIcon,
-  AccordionItem,
-  AccordionPanel,
   Box,
   Flex,
   Grid,
   GridItem,
+  Image,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/image";
 
 const OurServices = () => {
   return (
@@ -43,7 +38,7 @@ const OurServices = () => {
           MLS - LOGIN WITH US TO EXPEDITE
         </Text>
         <Grid
-          gridTemplateColumns={{ lg: "40% 60%", base: "unset" }}
+          gridTemplateColumns={{ lg: "45% 55%", base: "unset" }}
           justifyContent={"space-between"}
           fontSize={"14px"}
           gap={"10"}
@@ -62,12 +57,10 @@ const OurServices = () => {
               width="0"
               height="0"
               sizes="100vw"
-              quality={100}
-              priority={true}
               style={{
                 width: "100%",
                 height: "100%",
-                objectFit: "contain",
+                objectFit: "cover",
                 maxWidth: "100%",
                 maxHeight: "100%",
                 borderRadius: "2rem",

@@ -1,5 +1,4 @@
-import React from "react";
-import Head from "next/head";
+import { Helmet } from "react-helmet-async";
 
 type Props = {
   title: string;
@@ -9,39 +8,35 @@ type Props = {
 
 const Meta = ({ title, keywords, description }: Props) => {
   return (
-    <Head>
-      <meta
-        name="google-site-verification"
-        content="2WxeB47QwUgB4OtawGepEVh_ISIlKflFNyYzYsGXQ9k"
-      />
+    <Helmet>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="keywords" content={keywords} />
       <meta name="description" content={description} />
       <meta charSet="utf-8" />
       <link rel="icon" href={"/assets/images/mls_logo.png"} />
-      <link rel="canonical" href="https://www.cspxysma.art" />
+      <link rel="canonical" href="https://modern-logistics-services.netlify.app/" />
       <title>{title}</title>
       <meta
         name="og:title"
-        content="CSP Silent Auction | Art for a Cause - CSPxYSMA"
+        content="Modern Logistics Services Limited"
       />
       <meta
         name="og:description"
-        content="Join us for the CSP Silent Auction, an exciting event showcasing a diverse collection of artwork, all for a great cause. Immerse yourself in the world of art while supporting the mission of CSP in collaboration with YSMA. Bid on your favorite pieces and engage in friendly competition with fellow art enthusiasts, collectors, and philanthropists. Don't miss this opportunity to acquire remarkable artwork while making a positive impact on society."
+        content="We simply add quality to your business by giving you the best service you could ever get"
       />
       <meta name="og:image" content={"/assets/images/mls_logo.png"} />
-      <meta name="og:url" content="https://www.cspxysma.art" />
+      <meta name="og:url" content="https://modern-logistics-services.netlify.app/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="CSP Silent Auction | Art for a Cause - CSPxYSMA"
+        content="Modern Logistics Services Limited"
       />
       <meta
         name="twitter:description"
-        content="Join us for the CSP Silent Auction, an exciting event showcasing a diverse collection of artwork, all for a great cause. Immerse yourself in the world of art while supporting the mission of CSP in collaboration with YSMA. Bid on your favorite pieces and engage in friendly competition with fellow art enthusiasts, collectors, and philanthropists. Don't miss this opportunity to acquire remarkable artwork while making a positive impact on society."
+        content="We simply add quality to your business by giving you the best service you could ever get"
       />
       <meta name="twitter:image" content={"/assets/images/mls_logo.png"} />
-    </Head>
+    </Helmet>
   );
 };
 

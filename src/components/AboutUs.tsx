@@ -1,5 +1,4 @@
-import { Box, Grid, GridItem, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 // const YouTubeVideo = ({ videoId }: { videoId: string }) => {
 //   const embedUrl = `https://www.youtube.com/embed/${videoId}`;
 
@@ -20,7 +19,7 @@ const AboutUs = () => {
       id="aboutus"
       mt={"3rem"}
       bg={"brand.graya"}
-      p={{ lg: "2rem", base: "1rem" }}
+      px={{ lg: "2rem", base: "1rem" }}
       py={"2rem"}
       borderRadius={"2rem"}
       gap={"10"}
@@ -64,8 +63,6 @@ const AboutUs = () => {
             width="0"
             height="0"
             sizes="100vw"
-            quality={100}
-            priority={true}
             style={{
               objectFit: "contain",
               width: "100%",

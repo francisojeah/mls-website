@@ -1,7 +1,5 @@
 import { EmailIcon, InfoIcon, PhoneIcon } from "@chakra-ui/icons";
 import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
-import Link from "next/link";
-import { MirrowIcon } from "./MirrowIcon";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
@@ -40,15 +38,15 @@ const Footer = () => {
         </GridItem>
         <GridItem p={{ lg: "2rem", base: "1rem" }}>
           <Flex flexDirection={"column"} gap={"5"}>
-            <Link href={"#home"}>
+            <a href={"#home"}>
               <Text>HOME</Text>
-            </Link>
-            <Link href={"#aboutus"}>
+            </a>
+            <a href={"#aboutus"}>
               <Text>ABOUT US</Text>
-            </Link>
-            <Link href={"#ourservices"}>
+            </a>
+            <a href={"#ourservices"}>
               <Text>OUR SERVICES</Text>
-            </Link>
+            </a>
           </Flex>{" "}
         </GridItem>
         <GridItem p={{ lg: "2rem", base: "1rem" }}>
@@ -57,18 +55,18 @@ const Footer = () => {
               <InfoIcon mr={"5"} />
               22 king George V.Road,Onikan Lagos.
             </Text>
-            <Link href={"tel:+2348055404765"}>
+            <a href={"tel:+2348055404765"}>
               <Text>
                 <PhoneIcon mr={"5"} />
                 +234 805 540 4765
               </Text>
-            </Link>
-            <Link href={"mailto:aderibigbe@modernlogistics.org"}>
+            </a>
+            <a href={"mailto:aderibigbe@modernlogistics.org"}>
               <Text>
                 <EmailIcon mr={"5"} />
                 aderibigbe@modernlogistics.org
               </Text>
-            </Link>
+            </a>
           </Flex>{" "}
         </GridItem>
       </Grid>
@@ -82,37 +80,37 @@ const Footer = () => {
         flexDirection={{ lg: "row", base: "column" }}
         w={"full"}
         borderTop={"2px"}
-        p={"4"}
+        px={{base:"4", lg:" 6rem"}}
+        pt={"6"}
         mx={"auto"}
         justifyContent={"space-between"}
       >
         <GridItem>
-          <Flex alignItems={"center"} justifyContent={"center"}>
-            <Link href={"tel:+2348055404765"}>
+          <Flex justifyContent={{base: "center", md: "unset"}} alignItems={"center"}>
+            <a href={"tel:+2348055404765"}>
               <Text
                 display={"flex"}
                 textAlign={{ base: "center", lg: "unset" }}
               >
-                Powered by Mirrow
-                <MirrowIcon />
+                Powered by Francis Okocha-Ojeah
               </Text>
-            </Link>
+            </a>
           </Flex>
         </GridItem>
         <GridItem display={"flex"} justifyContent={"space-between"} w={"full"}>
-          <Link
+          <a
             href="https://www.linkedin.com/in/francis-okocha-ojeah/"
             target="_blank"
           >
             <FaLinkedin style={{ fontSize: "25px" }} />
-          </Link>
-          <Link href="https://github.com/francisojeah" target="_blank">
+          </a>
+          <a href="https://github.com/francisojeah" target="_blank">
             <FaGithub style={{ fontSize: "25px" }} />
-          </Link>
+          </a>
 
-          <Link href="https://twitter.com/FrancisOjeah" target="_blank">
+          <a href="https://twitter.com/FrancisOjeah" target="_blank">
             <FaTwitter style={{ fontSize: "25px" }} />
-          </Link>
+          </a>
         </GridItem>
       </Grid>
     </Box>

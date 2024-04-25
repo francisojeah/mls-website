@@ -1,5 +1,4 @@
-import { Box, Flex, Grid, GridItem, Text } from "@chakra-ui/react";
-import Image from "next/image";
+import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 
 const WhyChooseUs = () => {
   return (
@@ -33,7 +32,7 @@ const WhyChooseUs = () => {
           base: "repeat(1, 1fr)",
           md: "repeat(2, 1fr)",
         }}
-        gap="4"
+        gap="8"
         fontSize={"14px"}
       >
         <GridItem
@@ -60,8 +59,6 @@ const WhyChooseUs = () => {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  quality={100}
-                  priority={true}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -106,8 +103,6 @@ const WhyChooseUs = () => {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  quality={100}
-                  priority={true}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -152,8 +147,6 @@ const WhyChooseUs = () => {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  quality={100}
-                  priority={true}
                   style={{
                     width: "100%",
                     height: "100%",
@@ -199,8 +192,6 @@ const WhyChooseUs = () => {
                   width="0"
                   height="0"
                   sizes="100vw"
-                  quality={100}
-                  priority={true}
                   style={{
                     width: "100%",
                     height: "100%",
