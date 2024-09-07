@@ -31,7 +31,7 @@
     npm run dev
     ```
 
-   The website will be available at `http://localhost:3000`.
+   The website will be available at `http://localhost:5173`.
 
 ### Links
 
